@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer img {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding to your preference */
+}
+
+

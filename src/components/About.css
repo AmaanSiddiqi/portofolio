@@ -1,0 +1,83 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+  width: 120px;  /* Adjust width as necessary */
+}
+
+.language-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.languages-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.language-description {
+  display: none; /* Hide the description initially */
+  transition: opacity 0.3s ease; /* Smooth transition for the description */
+}
+
+.language-container:hover .language-description {
+  display: block; /* Show the description on hover */
+  opacity: 1; /* Make the description fully opaque */
+}
+
+.popup-description {
+  position: fixed; /* or 'absolute' depending on the container's positioning */
+  top: 50%; /* Adjust based on actual layout */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* or any appropriate size */
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Targets each individual slide container directly */
+.slick-slide > div {
+  text-align: center; /* Centers all text and inline elements like images */
+}
+
+/* Styles for images to ensure they are centered and have consistent sizing */
+.slick-slide img {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height, adjust as necessary */
+  display: block; /* Makes the image a block element */
+  margin: 0 auto 10px; /* Auto margins for horizontal centering, 10px margin below the image */
+}
+
+/* Ensure heading tags within slides are centered if not already */
+.slick-slide h3 {
+  margin-top: 5px; /* Adds a little space above the heading */
+}
+
+.about-me, .languages {
+  text-align: center; /* Centers the text within these containers */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the children (h2 and p) horizontally */
+  justify-content: center; /* Optional: Centers children vertically if needed */
+}
+
+.skill-carousel-container {
+  max-width: 1000px; /* Adjust this value to make the carousel narrower */
+  margin: auto; /* Center the carousel horizontally */
+}
+
+
